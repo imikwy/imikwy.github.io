@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Die Stream-Box links ausrichten */
+    align-items: flex-start; /* Die Stream-Box oben ausrichten */
     height: 100vh;
     background-color: #f0f0f0;
 }
