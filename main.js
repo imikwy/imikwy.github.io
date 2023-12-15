@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const twitchEmbed = new Twitch.Embed('twitch-embed', {
-        width: 800,
-        height: 600,
-        channel: 'https://www.twitch.tv/amar',
+        width: window.innerWidth,  // Die Breite des Fensters
+        height: window.innerHeight, // Die Höhe des Fensters
+        channel: 'xrohat',
         layout: 'video',
         autoplay: false
     });
