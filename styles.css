@@ -1,14 +1,221 @@
 body {
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start; /* Die Stream-Box links ausrichten */
-    align-items: flex-start; /* Die Stream-Box oben ausrichten */
-    height: 100vh;
-    background-color: #f0f0f0;
-}
-
-#twitch-embed {
-    width: 800px;
-    height: 600px;
-}
+    min-width: 340px;
+    background: #282832;
+    font-family: arial, sans-serif;
+    letter-spacing: 0.05em;
+    color: #CCC;
+    }
+    
+    sup {
+    font-size: 0.5em;
+    }
+    
+    iframe, body, html {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    }
+    
+    #playdiv iframe {
+    background: black;
+    }
+    
+    .rootdiv, #playdiv div, #chatdiv div {
+    position: absolute;
+    overflow: hidden;
+    }
+    
+    .fb-video {
+    top:50%; left:50%;
+    transform: translate(-50%,-50%);
+    }
+    
+    .fb-video span {
+    position: static !important;
+    }
+    
+    .plyrhigh {
+    width: 100%;
+    height: 100%;
+    background: #00B8F5;
+    opacity: 0.3;
+    }
+    
+    #chatnav {
+    left: 50px; right: 50px;
+    text-align: center;
+    font-size: 0.75em;
+    }
+    
+    .submenu {
+    padding: 20px;
+    overflow: hidden;
+    }
+    
+    #notdiv {
+    position: absolute;
+    z-index: 1;
+    background: #00529C;
+    border-radius: 10px;
+    overflow: hidden;
+    }
+    
+    #menudsc {
+    padding: 7px 0;
+    text-align: center;
+    }
+    
+    .menublk {
+    padding: 0 20px 10px 20px;
+    overflow: hidden;
+    }
+    
+    .menuscr {
+    position: absolute;
+    top: 0px; bottom: 0px;
+    width: 100%;
+    }
+    
+    img, input, select {
+    vertical-align: middle;
+    }
+    
+    input, select {
+    box-sizing: content-box;
+    border: 0;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    background: #DDDDDD;
+    color: black;
+    }
+    
+    #mp0 input, #mp0 select {
+    width: 115px;
+    }
+    
+    #menubot img {
+    width: 20px;
+    height: 20px;
+    }
+    
+    .menurow {
+    padding: 7px 0;
+    position: relative;
+    }
+    
+    #mp0 img, #mp0 input, #mp0 select {
+    margin-left: 15px;
+    }
+    
+    #strflds input, #chatfld select {
+    background: #999;
+    }
+    
+    .extops {
+    position: absolute;
+    left: 32px;
+    padding: 0 3px;
+    border-radius: 5px;
+    }
+    
+    #shrlnk {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 3px 0;
+    margin-top: 10px;
+    }
+    
+    #shrlnk::-webkit-scrollbar,
+    #menubot::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    }
+    
+    #shrlnk::-webkit-scrollbar-track,
+    #menubot::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #444;
+    }
+    
+    #shrlnk::-webkit-scrollbar-thumb,
+    #menubot::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #AAA;
+    }
+    
+    a, .blu {
+    color: #00B8F5;
+    }
+    
+    .lnk {
+    text-decoration: underline;
+    cursor: pointer;
+    }
+    
+    .menutxt, .faqn div {
+    padding-bottom: 18px;
+    }
+    
+    .txtpad {
+    padding-left: 22px;
+    }
+    
+    .txtbld {
+    font-weight: bold;
+    }
+    
+    .faqpop {
+    padding: 10px;
+    border-radius: 10px;
+    }
+    
+    .tabbar {
+    overflow: hidden;
+    padding-bottom: 20px;
+    }
+    
+    .menutab {
+    float: left;
+    width: 24%;
+    padding: 5px 0;
+    border-left: 1px solid gray;
+    text-align: center;
+    cursor: pointer;
+    }
+    
+    .btn {
+    float: left;
+    width: 23%;
+    padding: 5px 0;
+    margin: 0 2px;
+    border-radius: 20px;
+    background: #0070BA;
+    font-size: 0.75em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+    
+    .diagbtn {
+    float: right;
+    font-size: 0.7em;
+    }
+    
+    .tipbtn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 2px;
+    border-radius: 10px;
+    background: #0070BA;
+    color: #EEE;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+    
